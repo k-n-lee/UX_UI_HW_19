@@ -1,3 +1,5 @@
+/*Overall Formatting*/
+
 body {
     background-color: #555757;
     min-height: 100%;
@@ -156,7 +158,7 @@ footer ul {
 
 .workGrid {
     display: grid;
-    grid-template-columns: 65% 25%;
+    grid-template-columns: 65% 35%;
     grid-template-rows: 475px 475px 475px;
     grid-template-areas: "WorkImage1" "WorkDescription1" "WorkImage2" "WorkDescription2" "WorkImage3" "WorkDescription3";
     padding-top: 10px;
@@ -165,41 +167,21 @@ footer ul {
     padding-left: 40px;
     font-family: 'Montserrat', sans-serif;
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.1s;
 }
 
-#WorkImage1 {
-    padding-left: 20px;
-    text-align: center;
-    height: 750px;
-    width: 750px;
-}
-
-#WorkDescription1 {
-    padding-top: 15px;
-}
-
-#WorkImage2 {
-    padding-left: 20px;
-    text-align: center;
-    height: 750px;
-    width: 750px;
-}
-
-#WorkDescription2 {
-    padding-top: 15px;
-}
-
-#WorkImage3 {
-    padding-left: 20px;
-    text-align: center;
+#WorkImage1, #WorkImage2, #WorkImage3 {
+    padding-left: 30px;
+    padding-bottom: 40px;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    width: 750px;
+    max-height: 100%;
 }
 
-#WorkDescription3 {
+#WorkDescription1, #WorkDescription2, #WorkDescription3 {
     padding-top: 15px;
-    height: auto;
+    padding-right: 30px;
 }
 
 .workGrid button {
@@ -243,5 +225,5 @@ footer ul {
 
 #selectWork {
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.1s;
 }
